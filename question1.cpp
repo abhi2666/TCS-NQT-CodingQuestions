@@ -12,10 +12,9 @@ NOTE : DO NOT USE POW FUNCTION BECAUSE IT WILL GIVE WRONG ANSWER FOR SOME TEST C
 */
 int solve(string num, int base)
 {
-    int ans = 0, power = 1;
+    int ans = 0, power = 1, val;
     for (int i = num.size() - 1; i >= 0; i--)
     {
-        int val;
         if (num[i] >= '0' && num[i] <= '9')
         {
             val = num[i] - '0';

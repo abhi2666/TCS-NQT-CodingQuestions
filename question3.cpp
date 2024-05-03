@@ -13,7 +13,7 @@ string DecimalToBinary(int n){
 }
 
 int convertDecimal(string binary){
-    int ans = 0, power = 1;
+    int ans = 0, power = 1; //reprsents 2^0 = 1 
     for(int i = binary.size()-1; i >= 0; i--){
         int temp = binary[i]-'0';
         ans += (temp * power);
@@ -23,7 +23,7 @@ int convertDecimal(string binary){
 }
 int main()
 {
-    int n = 7;
+    int n = 10;
     string binary = DecimalToBinary(n);
     cout<<"binary "<<binary<<endl;
     //toggle 
